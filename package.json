@@ -1,0 +1,8 @@
+{
+  "name": "deploymate-deployment-dashboard",
+  "version": "1.0.0",
+  "description": "Deployment and version control lab dashboard by Anant Sinha",
+  "main": "server.js",
+  "scripts": {"start": "node server.js"},
+  "dependencies": {"express": "^4.21.2"}
+}

@@ -1,0 +1,7 @@
+const express = require('express');
+const path = require('path');
+const app = express();
+const PORT = process.env.PORT || 4000;
+app.use(express.static(path.join(__dirname, 'public')));
+app.get('/health', (_req, res) => res.json({ status: 'ok', app: 'DeployMate', creator: 'Anant Sinha' }));
+app.listen(PORT, () => console.log(`DeployMate running at http://localhost:${PORT}`));
